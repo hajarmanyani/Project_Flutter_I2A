@@ -63,6 +63,10 @@ Activités, Ajout et Profil</p>
 <p>Ensuite, l'utilisateur et sauvegardé dans la base de données dans une collection appelée "userrs"</p>
 <img width="727" alt="Capture3" src="https://github.com/hajarmanyani/Project_Flutter_I2A/assets/93662714/d6349c56-b4e7-43a0-9636-47451b7df763">
 
+<h1>Les images de test</h1>
+<img width="687"  src="https://github.com/hajarmanyani/Project_Flutter_I2A/assets/93662714/c5f5d934-1191-4f2b-8d7b-45ca59e1aedb">
+<img width="687"  src="https://github.com/hajarmanyani/Project_Flutter_I2A/assets/93662714/1259763a-7af4-4cdc-a493-1dea26313a1c">
+
 <h1>Note</h1>
 Je vous remercie pour la qualité de cette mission, et je m'excuse vivement pour mon absence durant les 2 dernières séances successives.
 <br>
