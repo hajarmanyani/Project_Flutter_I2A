@@ -67,11 +67,5 @@ Activités, Ajout et Profil</p>
 <img width="687"  src="https://github.com/hajarmanyani/Project_Flutter_I2A/assets/93662714/c5f5d934-1191-4f2b-8d7b-45ca59e1aedb">
 <img width="687"  src="https://github.com/hajarmanyani/Project_Flutter_I2A/assets/93662714/1259763a-7af4-4cdc-a493-1dea26313a1c">
 
-<h1>Note</h1>
-Je vous remercie pour la qualité de cette mission, et je m'excuse vivement pour mon absence durant les 2 dernières séances successives.
-<br>
-J'ai été obligé d'assister à des sessions de recrutement très importantes.
-<br><br>
-Merci pour votre compréhension
 
 
