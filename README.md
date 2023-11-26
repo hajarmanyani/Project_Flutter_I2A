@@ -67,5 +67,9 @@ Activités, Ajout et Profil</p>
 <img width="687"  src="https://github.com/hajarmanyani/Project_Flutter_I2A/assets/93662714/c5f5d934-1191-4f2b-8d7b-45ca59e1aedb">
 <img width="687"  src="https://github.com/hajarmanyani/Project_Flutter_I2A/assets/93662714/1259763a-7af4-4cdc-a493-1dea26313a1c">
 
-
-
+<h1>Conclusion</h1>
+<p>Ce TP a été une expérience enrichissante dans le développement d'une application mobile avec Flutter en intégrant des fonctionnalités avancées telles que la reconnaissance automatique des activités à l'aide d'un modèle d'IA basé sur un réseau neuronal convolutif (CNN).</p>
+<br>
+<p>L'utilisation de Firebase pour l'authentification et le stockage des données a simplifié la gestion des utilisateurs et des activités. Les User Stories, inspirées des méthodologies agiles, ont permis de définir clairement les besoins fonctionnels, facilitant ainsi le processus de développement.</p>
+<br>
+<p>En résumé, ce TP a permis de mettre en pratique divers concepts de développement d'applications mobiles, de la conception d'une interface utilisateur à l'intégration de technologies avancées, dans le but de créer une application fonctionnelle et innovante.</p>
