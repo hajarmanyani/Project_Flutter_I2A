@@ -144,7 +144,7 @@ class _AccueilState extends State<Accueil> {
             ? FirebaseFirestore.instance.collection('Activites').snapshots()
             : FirebaseFirestore.instance
             .collection('Activites')
-            .where('title', isEqualTo: selectedActivite)
+            .where('category', isEqualTo: selectedActivite)  // Change here from 'title' to 'category'
             .snapshots(),
         builder: (context, snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
@@ -207,6 +207,7 @@ class _AccueilState extends State<Accueil> {
           );
         },
       );
+
     } else if (_currentIndex == 1) {
       return AjoutPage();
     } else {
@@ -480,11 +481,12 @@ class DetailActivite extends StatelessWidget {
 
         var activite = snapshot.data?.data() as Map<String, dynamic>;
 
-        return AlertDialog(
-          content: SingleChildScrollView(
-            child: Center(
+        return Center(
+          child: AlertDialog(
+            content: SingleChildScrollView(
               child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.center, // Center the children vertically
+                crossAxisAlignment: CrossAxisAlignment.center, // Center the children horizontally
                 mainAxisSize: MainAxisSize.min,
                 children: [
                   Text(
@@ -492,22 +494,13 @@ class DetailActivite extends StatelessWidget {
                     style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
                   ),
                   SizedBox(height: 10),
-                  Text(
-                    'Titre: ${activite['title']}',
-                    style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
-                  ),
-                  SizedBox(height: 10),
-                  Text(
-                    'Lieu: ${activite['location']}',
-                    style: TextStyle(fontSize: 14),
-                  ),
-                  SizedBox(height: 10),
-                  Text(
-                    'Prix: ${activite['price']}',
-                    style: TextStyle(fontSize: 14),
-                  ),
+                  buildDetailRow('Catégorie', activite['category']),
+                  buildDetailRow('Lieu', activite['location']),
+                  buildDetailRow('Nombre de personnes', activite['numberOfPeople'].toString()),
+                  buildDetailRow('Prix', activite['price'].toString()),
+                  buildDetailRow('Titre', activite['title']),
                   SizedBox(height: 20),
-                  // Agrandir l'image à partir de l'URL avec un style attirant
+                  // Display the image
                   activite['imageUrl'] != null
                       ? Container(
                     height: 200,
@@ -545,6 +538,23 @@ class DetailActivite extends StatelessWidget {
           ),
         );
       },
+    );
+  }
+
+  Widget buildDetailRow(String label, String value) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+      children: [
+        Text(
+          '$label:',
+          style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+        ),
+        SizedBox(width: 10),
+        Text(
+          value,
+          style: TextStyle(fontSize: 14),
+        ),
+      ],
     );
   }
 }
