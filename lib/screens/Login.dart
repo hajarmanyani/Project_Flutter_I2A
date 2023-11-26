@@ -133,22 +133,46 @@ class _LoginState extends State<Login> {
                               ),
                               style: const ButtonStyle(),
                             ),
-                            CircleAvatar(
-                              radius: 30,
-                              backgroundColor: const Color(0xffcaaed2),
-                              child: IconButton(
-                                color: Colors.black,
-                                onPressed: () {
-                                  if (_formKey.currentState!.validate()) {
-                                    signIn();
-                                  }
-                                },
-                                icon: const Icon(
-                                  Icons.arrow_forward,
+                            ElevatedButton(
+                              onPressed: () {
+                                if (_formKey.currentState!.validate()) {
+                                  signIn();
+                                }
+                              },
+                              style: ElevatedButton.styleFrom(
+                                primary: const Color(0xffcaaed2),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(30.0),
+                                ),
+                              ),
+                              child: Container(
+                                padding: const EdgeInsets.all(10.0),
+                                child: const Text(
+                                  'Se connecter',
+                                  style: TextStyle(
+                                    color: Colors.black,
+                                    fontSize: 16,
+                                  ),
                                 ),
                               ),
                             ),
                           ],
+                        ),
+                        SizedBox(
+                          height: 10,
+                        ),
+                        TextButton(
+                          onPressed: () {
+                            // TODO: Implement password recovery logic
+                            // Navigate to a password recovery page or show a dialog
+                          },
+                          child: Text(
+                            'Mot de passe oublié ?',
+                            style: TextStyle(
+                              color: Color(0xffcaaed2),
+                              fontSize: 12,
+                            ),
+                          ),
                         ),
                       ],
                     ),

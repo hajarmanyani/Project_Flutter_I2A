@@ -243,6 +243,7 @@ class _AccueilState extends State<Accueil> {
   }
 }
 
+
 class AjoutPage extends StatefulWidget {
   @override
   _AjoutPageState createState() => _AjoutPageState();
@@ -541,57 +542,6 @@ class DetailActivite extends StatelessWidget {
                 ],
               ),
             ),
-          ),
-        );
-      },
-    );
-  }
-}
-
-class ProfilPage extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return StreamBuilder<QuerySnapshot>(
-      stream: FirebaseFirestore.instance.collection('users').snapshots(),
-      builder: (context, snapshot) {
-        if (snapshot.connectionState == ConnectionState.waiting) {
-          return CircularProgressIndicator();
-        }
-
-        if (snapshot.hasError) {
-          return Text('Error: ${snapshot.error}');
-        }
-
-        // Suppose que vous avez un seul utilisateur dans la collection
-        // Vous pouvez ajuster cela selon vos besoins
-        var user = snapshot.data!.docs.first;
-
-        return Center(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(
-                'Nom Utilisateur: ${user['username']}',
-                style: TextStyle(
-                  fontSize: 24,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              SizedBox(height: 16),
-              ElevatedButton(
-                onPressed: () {
-                  // Logique pour modifier le compte
-                },
-                child: Text('Modifier le compte'),
-              ),
-              SizedBox(height: 8),
-              ElevatedButton(
-                onPressed: () {
-                  // Logique pour supprimer le compte
-                },
-                child: Text('Supprimer le compte'),
-              ),
-            ],
           ),
         );
       },

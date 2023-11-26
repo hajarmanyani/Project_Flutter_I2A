@@ -187,18 +187,26 @@ class _RegisterState extends State<Register> {
                                   ),
                                   style: const ButtonStyle(),
                                 ),
-                                CircleAvatar(
-                                  radius: 30,
-                                  backgroundColor: const Color(0xffcaaed2),
-                                  child: IconButton(
-                                    color: Colors.black,
-                                    onPressed: () {
-                                      if (_formKey.currentState!.validate()) {
-                                        signUp();
-                                      }
-                                    },
-                                    icon: const Icon(
-                                      Icons.arrow_forward,
+                                ElevatedButton(
+                                  onPressed: () {
+                                    if (_formKey.currentState!.validate()) {
+                                      signUp();
+                                    }
+                                  },
+                                  style: ElevatedButton.styleFrom(
+                                    primary: const Color(0xffcaaed2),
+                                    shape: RoundedRectangleBorder(
+                                      borderRadius: BorderRadius.circular(30.0),
+                                    ),
+                                  ),
+                                  child: Container(
+                                    padding: const EdgeInsets.all(10.0),
+                                    child: const Text(
+                                      'S\'enregistrer',
+                                      style: TextStyle(
+                                        color: Colors.black,
+                                        fontSize: 16,
+                                      ),
                                     ),
                                   ),
                                 ),
