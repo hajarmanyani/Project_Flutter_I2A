@@ -43,5 +43,31 @@ Activités, Ajout et Profil</p>
 <img width="200" height="350" src="https://github.com/hajarmanyani/Project_Flutter_I2A/assets/93662714/be74f9c8-1cd0-4cbe-bc6d-5a3ba8964be2">
 <p>Au clic sur une des entrées, la liste est filtrée pour afficher seulement les activités correspondantes à la catégorie sélectionnée</p>
 <img width="200" height="350" src="https://github.com/hajarmanyani/Project_Flutter_I2A/assets/93662714/ad765fc7-dc06-4036-8268-ba6139abca5f">
+<br>
 <img width="200" height="350" src="https://github.com/hajarmanyani/Project_Flutter_I2A/assets/93662714/5e0a448e-b4ac-4a8e-bcc0-ab92ad5b043d">
+
+<h2>US#5 : [IA] Ajouter une nouvelle activité</h2>
+<p>: Sur la BottomNavigationBar, j’accède à cette page au clic sur l’item « Ajout »</p>
+<img width="200" height="350" src="https://github.com/hajarmanyani/Project_Flutter_I2A/assets/93662714/f35fbaf7-6fc1-43cd-bdb0-1123f49692aa">
+<img width="200" height="350" src="https://github.com/hajarmanyani/Project_Flutter_I2A/assets/93662714/b6d2874a-8e51-457e-80fb-6bc74df65723">
+<p>Un bouton « Enregistrer » permet de sauvegarder les données (en base de données)</p>
+<img width="732" alt="Capture" src="https://github.com/hajarmanyani/Project_Flutter_I2A/assets/93662714/9ebd2674-fa60-4a09-86fd-40e413103c47">
+<p>Le champ catégorie est non éditable et doit être automatiquement défini à l’upload de l’image (IA)</p>
+<h2>Entrainement du modèle IA en utilisant le réseau CNN (Réseau neuronal convolutif)</h2>
+<img width="691" alt="Capture" src="https://github.com/hajarmanyani/Project_Flutter_I2A/assets/93662714/246f379a-300d-4c5b-9133-a72fb4b7e679">
+<img width="687" alt="Capture2" src="https://github.com/hajarmanyani/Project_Flutter_I2A/assets/93662714/9a853dbb-287d-49fd-be25-658212f1e8c3">
+
+<h2>US#6 : Amélioration</h2>
+<p>Ajouter un formulaire pour permettre aux utilisateurs de créer des comptes avec leus propres noms</p>
+<img width="200" height="350" src="https://github.com/hajarmanyani/Project_Flutter_I2A/assets/93662714/5205cbfd-1b01-4721-9fa2-5438c621b29f">
+<p>Ensuite, l'utilisateur et sauvegardé dans la base de données dans une collection appelée "userrs"</p>
+<img width="727" alt="Capture3" src="https://github.com/hajarmanyani/Project_Flutter_I2A/assets/93662714/d6349c56-b4e7-43a0-9636-47451b7df763">
+
+<h1>Note</h1>
+Je vous remercie pour la qualité de cette mission, et je m'excuse vivement pour mon absence durant les 2 dernières séances successives.
+<br>
+J'ai été obligé d'assister à des sessions de recrutement très importantes.
+<br><br>
+Merci pour votre compréhension
+
 
